@@ -1,0 +1,127 @@
+.accordion {
+  -fx-background-color: #353535;
+}
+
+.menu-bar, .menu-item {
+  -fx-background-color: #232323;
+  -fx-padding: 5 5 5 5;
+}
+
+.context-menu {
+    -fx-background-color: #353535;
+}
+
+.menu {
+  -fx-padding: 3 10 3 10;
+}
+
+.menu .text {
+  -fx-fill: #fff;
+}
+
+.menu:hover, .menu-item:hover {
+  -fx-background-color: #000;
+}
+
+.tab {
+  -fx-background-color: #353535;
+}
+
+.tab .text {
+    -fx-fill: #fff;
+}
+
+.split-pane-divider {
+  -fx-background-color: transparent;
+  -fx-padding: 0 0 0 0;
+}
+
+.button {
+  -fx-background-color: rgba(11, 11, 11, 0.2);
+  -fx-border-style: none;
+  /*-fx-padding: 10 0 10 30;*/
+}
+
+.button:hover {
+  -fx-background-color: rgb(35, 35, 35);
+}
+
+.button:pressed {
+  -fx-background-color: #000;
+}
+
+.hbox {
+  -fx-background-color: #AB2C2C;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+  -fx-cell-size : 20;
+  -fx-background-color: #AB2C2C;
+	-fx-border-color: rgba(0,0,0,0.2);
+}
+
+.table-view .column-header .label{
+   -fx-text-fill: #000;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER;
+}
+
+.table-view .cell{
+   -fx-cell-size: 30;
+  -fx-alignment: center-left;
+  -fx-text-fill: #000000;
+  -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:  rgb(127, 172, 243);
+ }
+
+ .table-row-cell:selected .text {
+        -fx-fill : white ;
+
+ }
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+	-fx-background-color: transparent;
+	-fx-border-color:derive(  #2D75E8,80%);
+	-fx-background-radius: 2em;
+	-fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( #2D75E8,90%);
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+
+}
+
+/* chart properties */
+
+.chart {
+    -fx-padding: 10px;
+    -fx-background-color: transparent;
+    -fx-legend-visible: false;
+}
+
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.chart-pie {
+    -fx-border-color: derive(-fx-pie-color, 1%);
+    -fx-border-width: 0px;
+}

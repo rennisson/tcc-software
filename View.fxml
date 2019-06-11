@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="755.0" prefWidth="1276.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar prefHeight="0.0" prefWidth="1101.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+      <TabPane tabMinHeight="25.0" tabMinWidth="120.0" VBox.vgrow="ALWAYS">
+         <tabs>
+            <Tab closable="false" text="Home">
+               <content>
+                  <SplitPane disable="true" dividerPositions="0.15673981191222572" focusTraversable="true" minWidth="500.0" prefHeight="-1.0" prefWidth="-1.0">
+                     <items>
+                        <AnchorPane fx:id="pedidosPane1" maxHeight="1.7976931348623157E308" maxWidth="400.0" minHeight="-Infinity" minWidth="400.0" prefHeight="530.0" prefWidth="400.0" style="-fx-background-color: #353535;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" style="&#10;" text="Home" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                                 <font>
+                                    <Font size="18.0" fx:id="x111" />
+                                 </font>
+                              </Label>
+                              <VBox alignment="CENTER" layoutY="258.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <children>
+                                    <Button alignment="CENTER" contentDisplay="TEXT_ONLY" maxWidth="400.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="400.0" style="-fx-padding: 0 0 0 0; -fx-background-color: #353535;" text="Você tem 2 novos pedidos pendentes!" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Button>
+                                    <Button alignment="CENTER" contentDisplay="TEXT_ONLY" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="37.0" prefWidth="400.0" style="-fx-padding: 0 0 0 0; -fx-background-color: #353535;" text="Há novas atualizações no estoque" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Button>
+                                    <Button alignment="CENTER" contentDisplay="TEXT_ONLY" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="37.0" prefWidth="400.0" style="-fx-padding: 0 0 0 0; -fx-background-color: #353535;" text="Há novas atualizações no seu controle financeiro" textFill="WHITE">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="100.0" prefHeight="668.0" prefWidth="432.0" style="-fx-background-color: #353535;">
+                           <children>
+                              <ImageView fitHeight="668.0" fitWidth="881.0" layoutX="104.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@logo.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D />
+                                 </viewport>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Pedidos">
+               <content>
+                <SplitPane disable="true" dividerPositions="0.17130801687763714, 0.869198312236287" focusTraversable="true" minWidth="500.0" prefHeight="-1.0" prefWidth="-1.0">
+                  <items>
+                        <AnchorPane fx:id="pedidosPane" maxHeight="1.7976931348623157E308" maxWidth="200.0" minHeight="-Infinity" minWidth="200.0" prefHeight="530.0" prefWidth="200.0" style="-fx-background-color: #353535;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" minWidth="60.0" style="&#10;" text="Pedidos" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                                 <font>
+                                    <Font size="18.0" fx:id="x11" />
+                                 </font>
+                              </Label>
+                              <VBox alignment="CENTER" layoutY="258.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+                                 <children>
+                                    <Button alignment="CENTER" contentDisplay="TEXT_ONLY" maxWidth="200.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-padding: 0 0 0 0;" text="Pedidos pendentes" textFill="WHITE" />
+                                    <Button alignment="CENTER" contentDisplay="TEXT_ONLY" maxWidth="200.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="200.0" style="-fx-padding: 0 0 0 0;" text="Pedidos concluídos" textFill="WHITE" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <TableView minWidth="600.0" prefHeight="590.0" prefWidth="801.0" snapToPixel="false">
+                          <columns>
+                            <TableColumn editable="false" maxWidth="310.0" minWidth="50.0" prefWidth="132.0" sortable="false" text="Data" />
+                            <TableColumn editable="false" minWidth="0.0" prefWidth="235.0" sortable="false" styleClass="column-header" text="Cliente" />
+                              <TableColumn editable="false" prefWidth="271.0" sortable="false" text="Pedidos" />
+                              <TableColumn editable="false" prefWidth="184.0" sortable="false" text="Preço total (R$)" />
+                          </columns>
+                        </TableView>
+                    <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="100.0" prefHeight="724.0" prefWidth="200.0" style="-fx-background-color: #353535;">
+                      <children>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" style="&#10;" text="Detalhes" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                                 <font>
+                            <Font size="18.0" fx:id="x1" />
+                                 </font></Label>
+                              <Label layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="165.0" text="dd/MM/yyyy" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="93.0" prefHeight="25.0" prefWidth="165.0" text="Cliente" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="118.0" prefHeight="25.0" prefWidth="165.0" text="Pedido 1" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="143.0" prefHeight="25.0" prefWidth="165.0" text="Pedido 2" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="168.0" prefHeight="25.0" prefWidth="165.0" text="Pedido 3" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="193.0" prefHeight="25.0" prefWidth="165.0" text="Pedido 4" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="218.0" prefHeight="25.0" prefWidth="165.0" text="Preço total R$" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="243.0" prefHeight="25.0" prefWidth="165.0" text="Preço total R$" textFill="WHITE" />
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="286.0" style="&#10;" text="Contato" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                                 <font>
+                                    <Font size="18.0" fx:id="x12" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="313.0" prefHeight="25.0" prefWidth="165.0" text="Email" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="338.0" prefHeight="25.0" prefWidth="165.0" text="Telefone 1" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="363.0" prefHeight="25.0" prefWidth="165.0" text="Telefone 2" textFill="WHITE" />
+                              <Label alignment="CENTER" layoutX="14.0" layoutY="412.0" style="&#10;" text="Endereço" textAlignment="CENTER" textFill="WHITE" wrapText="false">
+                                 <font>
+                                    <Font size="18.0" fx:id="x121" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="439.0" prefHeight="25.0" prefWidth="165.0" text="Rua" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="464.0" prefHeight="25.0" prefWidth="165.0" text="Numero" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="489.0" prefHeight="25.0" prefWidth="165.0" text="Complemento" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="514.0" prefHeight="25.0" prefWidth="165.0" text="Cidade  -  Estado" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="539.0" prefHeight="25.0" prefWidth="165.0" text="Bairro" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="564.0" prefHeight="25.0" prefWidth="165.0" text="CEP" textFill="WHITE" />
+                      </children>
+                    </AnchorPane>
+                  </items>
+                </SplitPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Controle de Estoque">
+               <content>
+                  <SplitPane dividerPositions="0.15673981191222572, 0.7774294670846394" prefHeight="160.0" prefWidth="200.0">
+                    <items>
+                      <AnchorPane fx:id="estoquePane" maxWidth="200.0" minWidth="200.0" prefHeight="659.0" prefWidth="200.0" style="-fx-background-color: #353535;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Lista de Itens" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button alignment="CENTER" layoutY="73.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-padding: 10 0 10 0;" text="Adicionar produtos" textAlignment="CENTER" textFill="WHITE">
+                                 <padding>
+                                    <Insets bottom="5.0" left="30.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                              <Accordion layoutY="186.0" maxWidth="203.0" minWidth="203.0" prefHeight="206.0" prefWidth="203.0">
+                                <panes>
+                                  <TitledPane expanded="false" prefHeight="201.0" prefWidth="203.0" style="-fx-background-color: #353535;" text="Por categoria">
+                                       <content>
+                                          <AnchorPane maxWidth="203.0" minWidth="203.0" style="-fx-background-color: #353535;">
+                                             <children>
+                                                <VBox minWidth="203.0" prefHeight="200.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="211.0" text="Doces" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="Salgados" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="247.0" text="Produtos em pó" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="231.0" text="Líquidos" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Corantes" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                  </TitledPane>
+                                    <TitledPane expanded="false" prefHeight="609.0" prefWidth="203.0" style="-fx-background-color: #353535;" text="Embalagem">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #353535;">
+                                             <children>
+                                                <VBox maxWidth="203.0" minWidth="203.0" prefHeight="200.0">
+                                                   <children>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Fitas" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="255.0" text="Caixas" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" text="Formas" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="277.0" text="Button" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                  <TitledPane expanded="false" prefHeight="397.0" prefWidth="201.0" style="-fx-background-color: #353535;" text="Por produtos">
+                                       <content>
+                                          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="203.0" minWidth="203.0" prefHeight="201.0" prefWidth="203.0" style="-fx-background-color: #353535; -fx-region-border: ;">
+                                             <children>
+                                                <VBox maxWidth="203.0" minWidth="203.0" prefHeight="37.0" prefWidth="203.0">
+                                                   <children>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="211.0" text="Bolos" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="266.0" text="Doces" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="276.0" text="Docinhos enrolados" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="252.0" text="Maçã" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" text="Pirulitos" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                  </TitledPane>
+                                </panes>
+                              </Accordion>
+                              <Button alignment="CENTER" layoutX="1.0" layoutY="110.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" style="-fx-padding: 10 0 10 0;" text="Remover produtos" textAlignment="CENTER" textFill="WHITE">
+                                 <padding>
+                                    <Insets bottom="5.0" left="30.0" top="5.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <TableView prefHeight="789.0" prefWidth="976.0">
+                          <columns>
+                            <TableColumn prefWidth="150.0" text="Nome" />
+                            <TableColumn editable="false" minWidth="0.0" prefWidth="75.0" text="Quantidade" />
+                              <TableColumn editable="false" minWidth="0.0" prefWidth="192.0" text="Validade" />
+                              <TableColumn editable="false" prefWidth="217.0" text="Preço (R$)" />
+                          </columns>
+                        </TableView>
+                      <AnchorPane minHeight="0.0" minWidth="100.0" prefHeight="668.0" prefWidth="220.0" style="-fx-background-color: #353535;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Detalhes" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="68.0" prefHeight="25.0" prefWidth="165.0" text="Nome" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="118.0" prefHeight="25.0" prefWidth="165.0" text="Quantidade" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="143.0" prefHeight="25.0" prefWidth="165.0" text="Preço unitário (R$)" textFill="WHITE" />
+                              <Label layoutX="14.0" layoutY="93.0" prefHeight="25.0" prefWidth="165.0" text="Validade (dd/MM/aaaa)" textFill="WHITE" />
+                           </children></AnchorPane>
+                    </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Controle Financeiro">
+               <content>
+                  <SplitPane dividerPositions="0.15673981191222572, 0.859717868338558" prefHeight="160.0" prefWidth="200.0">
+                    <items>
+                      <AnchorPane fx:id="financeiroPane" maxWidth="200.0" minHeight="0.0" minWidth="200.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #353535;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" text="Financeiro" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Accordion layoutX="-1.0" layoutY="58.0" maxWidth="203.0" minWidth="203.0" prefHeight="371.0" prefWidth="203.0" style="-fx-background-color: #353535;">
+                                 <panes>
+                                    <TitledPane expanded="false" prefHeight="201.0" prefWidth="203.0" styleClass="accordion" text="Relatorio mensal">
+                                       <content>
+                                          <AnchorPane maxWidth="203.0" minWidth="203.0" style="-fx-background-color: #353535;">
+                                             <children>
+                                                <VBox minWidth="203.0" prefHeight="200.0" prefWidth="100.0">
+                                                   <children>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="211.0" text="Geral" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="234.0" text="Despesas" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                         <opaqueInsets>
+                                                            <Insets />
+                                                         </opaqueInsets>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="247.0" text="Lucros" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </TitledPane>
+                                    <TitledPane prefHeight="609.0" prefWidth="203.0" text="Relatório anual">
+                                       <content>
+                                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #353535;">
+                                             <children>
+                                                <VBox maxWidth="203.0" minWidth="203.0" prefHeight="200.0">
+                                                   <children>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="250.0" text="Geral" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="255.0" text="Despesas" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                      <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="263.0" text="Lucros" textFill="WHITE">
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="30.0" top="5.0" />
+                                                         </padding>
+                                                      </Button>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                    </TitledPane>
+                                 </panes>
+                              </Accordion>
+                           </children>
+                        </AnchorPane>
+                        <VBox>
+                           <children>
+                              <DatePicker editable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="35.0" minWidth="-Infinity" showWeekNumbers="true" />
+                              <TableView maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" prefHeight="658.0" prefWidth="915.0" VBox.vgrow="ALWAYS">
+                                <columns>
+                                  <TableColumn prefWidth="250.0" text="Pedido" />
+                                  <TableColumn prefWidth="298.0" text="Preço (R$)" />
+                                    <TableColumn prefWidth="261.0" text="Total" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </VBox>
+                      <AnchorPane minHeight="0.0" minWidth="10.0" prefHeight="590.0" prefWidth="397.0" style="-fx-background-color: #353535;" />
+                    </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+    <HBox id="HBox" alignment="CENTER_LEFT" prefHeight="7.0" prefWidth="1210.0" spacing="5.0" style="-fx-background-color: #353535;" VBox.vgrow="NEVER">
+      <children>
+        <Label maxHeight="1.7976931348623157E308" maxWidth="-1.0" text="Left status" textAlignment="CENTER" textFill="WHITE" HBox.hgrow="ALWAYS">
+          <font>
+            <Font size="11.0" fx:id="x3" />
+          </font>
+        </Label>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label font="$x3" maxWidth="-1.0" text="Right status" textFill="WHITE" HBox.hgrow="NEVER" />
+      </children>
+      <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+      </padding>
+    </HBox>
+  </children>
+</VBox>
